@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+<h1> Hello, my name is <%= name %>. I was born!)</h1>
+<img src="https://www.freepik.com/premium-vector/cute-little-dog-cartoon-isolated-white_5781648.htm">
+
+<h2>Health <%= get('health') %></h2>
+<h2>Mood <%= get('mood') %></h2>
+<h2>Stomachisfull <%= get('stomachisfull') %></h2>
+<h2>Sleep <%= get('sleep') %></h2>
+<h2>Clear <%= get('clear') %></h2>
+
+<div class="options">
+  <form action="/change" method="get">
+
+    <button type="submit" class="btn btn-outline-danger" name="health" value="health">Health</button>
+
+    <button type="submit" class="btn btn-outline-warning" name="mood" value="mood">Mood</button>
+
+    <button type="submit" class="btn btn-outline-info" name="stomachisfull" value="stomachisfull">Stomachisfull</button>
+
+    <button type="submit" class="btn btn-outline-sucess" name="sleep" value="sleep">Sleep</button>
+
+    <button type="submit" class="btn btn-outline-info" name="clear" value="clear">Clear</button>
+
+  </form>
+
+</div>
+	
+</body>
+</html>
